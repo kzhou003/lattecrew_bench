@@ -1,6 +1,6 @@
 # lattecrew_bench
 
-Benchmarks, raw data and figures from a full-stack study of [LatteCrew](https://github.com/kzhou003/LatteCrew): a local-first AI team in which Claude Code and Codex plan and review, a local Qwen3.8-27B on one RTX 5090 writes code, and image, speech and video models share the same GPU.
+Benchmarks, raw data and figures from a full-stack study of [LatteCrew](https://github.com/kzhou003/lattecrew): a local-first AI team in which Claude Code and Codex plan and review, a local Qwen3.8-27B on one RTX 5090 writes code, and image, speech and video models share the same GPU.
 
 The study asked three questions:
 
@@ -42,7 +42,7 @@ Full analysis (Chinese, interactive charts): download and open [`report/lattecre
 
 ## Reproduce
 
-Hardware and software: RTX 5090 32 GB, Ubuntu 24.04, torch 2.13 + CUDA 13.0, vLLM 0.32.0, vLLM-Omni 0.32.0, Qwen3.8-27B AWQ INT4; a Mac with Claude Code, Codex CLI and Kiro Crew. Set up the system with [LatteCrew](https://github.com/kzhou003/LatteCrew), then:
+Hardware and software: RTX 5090 32 GB, Ubuntu 24.04, torch 2.13 + CUDA 13.0, vLLM 0.32.0, vLLM-Omni 0.32.0, Qwen3.8-27B AWQ INT4; a Mac with Claude Code, Codex CLI and Kiro Crew. Set up the system with [LatteCrew](https://github.com/kzhou003/lattecrew), then:
 
 ```bash
 # on the GPU machine
