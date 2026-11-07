@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" class="chart" viewBox="0 0 720 300" role="img" aria-label="TPOT vs context" preserveAspectRatio="xMidYMid meet"><style>svg{
+  /* Layout: one reading column of about 68ch; figures may widen to 920px. Lab-notebook calm, coffee-tinted neutrals. */
+  --bg:#f7f6f3; --panel:#ffffff; --fg:#1d1c1a; --muted:#5d5b55; --faint:#8b8880; --rule:#e2dfd8; --grid:#ebe8e2;
+  --accent:#7a4a2a; --code-bg:#efece6;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --mute-fill:#c9c6bf;
+  --n0:#f1efea; --n1:#e9f1fb; --n2:#eef7f2; --n3:#fbf0e9; --n4:#f5f1e3;
+  --display:"Noto Serif SC","Songti SC",serif; --body:"Noto Sans SC","PingFang SC","Hiragino Sans GB",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+ font-family:'Noto Sans SC','PingFang SC',sans-serif; background:var(--panel)}
+svg.chart{display:block;width:100%;height:auto;min-width:560px}
+svg .s1{fill:var(--s1)} svg .s2{fill:var(--s2)} svg .s3{fill:var(--s3)} svg .s4{fill:var(--s4)} svg .muted{fill:var(--mute-fill)}
+svg .seg-ok{fill:var(--s1)} svg .seg-bad{fill:var(--s2)} svg .seg-miss{fill:var(--mute-fill)}
+svg .line{fill:none;stroke-width:2} svg .line.s1{stroke:var(--s1)} svg .line.s2{stroke:var(--s2)} svg .line.s4{stroke:var(--s4)}
+svg .dot{stroke:var(--panel);stroke-width:2}
+svg .grid{stroke:var(--grid);stroke-width:1} svg .axis{stroke:var(--faint);stroke-width:1} svg .rowrule{stroke:var(--grid);stroke-dasharray:2 4}
+svg text{fill:var(--muted);font-family:var(--body);font-size:12.5px}
+svg .tick{font-family:var(--mono);font-size:11px;fill:var(--faint)}
+svg .val{font-family:var(--mono);font-size:12px;fill:var(--fg)}
+svg .lab{fill:var(--fg);font-size:13px} svg .axlab{font-size:12px;fill:var(--muted)}
+svg .hitbox{fill:transparent} svg .hair{stroke:var(--faint);stroke-width:1;opacity:0}
+svg .col:hover .hair,svg .col:focus .hair{opacity:1}
+svg .hit:hover path,svg .hit:hover > rect:not(.hitbox){opacity:.85}
+svg .node{fill:var(--n0);stroke:var(--rule)} svg .node.n1{fill:var(--n1)} svg .node.n2{fill:var(--n2)} svg .node.n3{fill:var(--n3)} svg .node.n4{fill:var(--n4)}
+svg .nodet{fill:var(--fg);font-weight:600;font-size:14px} svg .nodes{fill:var(--muted);font-size:12px}
+svg .meas{fill:var(--fg);font-family:var(--mono);font-size:12.5px}
+svg .flow{stroke:var(--faint);stroke-width:1.5} svg .arrowhead{fill:var(--faint)}
+svg .life{stroke:var(--rule);stroke-dasharray:3 4}
+svg .msg{fill:none;stroke-width:1.8} svg .msg.m1{stroke:var(--s1)} svg .msg.m2{stroke:var(--s2)} svg .msg.m3{stroke:var(--s3)}
+svg .msgt{fill:var(--fg);font-size:12.5px;font-weight:600} svg .msgs{fill:var(--muted);font-size:11.5px}
+svg .hair{display:none}</style><line class="grid" x1="58" x2="696" y1="256.0" y2="256.0"/><text class="tick" x="50" y="256.0" text-anchor="end" dominant-baseline="middle">0</text><line class="grid" x1="58" x2="696" y1="189.3" y2="189.3"/><text class="tick" x="50" y="189.3" text-anchor="end" dominant-baseline="middle">5</text><line class="grid" x1="58" x2="696" y1="122.7" y2="122.7"/><text class="tick" x="50" y="122.7" text-anchor="end" dominant-baseline="middle">10</text><line class="grid" x1="58" x2="696" y1="56.0" y2="56.0"/><text class="tick" x="50" y="56.0" text-anchor="end" dominant-baseline="middle">15</text><text class="tick" x="58.0" y="274" text-anchor="middle">0K</text><text class="tick" x="245.6" y="274" text-anchor="middle">20K</text><text class="tick" x="433.2" y="274" text-anchor="middle">40K</text><text class="tick" x="620.8" y="274" text-anchor="middle">60K</text><line class="axis" x1="58" x2="696" y1="256" y2="256"/><text class="axlab" x="377.0" y="294" text-anchor="middle">上下文长度（token）</text><text class="axlab" x="14" y="136.0" text-anchor="middle" transform="rotate(-90 14 136.0)">每个输出 token 的时间（ms）</text><path class="line s1" d="M62.7,85.4 L76.9,84.8 L136.4,81.1 L216.5,76.9 L376.8,67.9 L544.6,58.1 L671.5,50.7"/><circle class="dot s1" cx="62.7" cy="85.4" r="4.5"/><circle class="dot s1" cx="76.9" cy="84.8" r="4.5"/><circle class="dot s1" cx="136.4" cy="81.1" r="4.5"/><circle class="dot s1" cx="216.5" cy="76.9" r="4.5"/><circle class="dot s1" cx="376.8" cy="67.9" r="4.5"/><circle class="dot s1" cx="544.6" cy="58.1" r="4.5"/><circle class="dot s1" cx="671.5" cy="50.7" r="4.5"/><g class="hit col" data-tip="TPOT: 12.8 ms/token"><rect class="hitbox" x="58.0" y="16" width="11.8" height="240"/><line class="hair" x1="62.7" x2="62.7" y1="16" y2="256"/></g><g class="hit col" data-tip="TPOT: 12.8 ms/token"><rect class="hitbox" x="69.8" y="16" width="36.8" height="240"/><line class="hair" x1="76.9" x2="76.9" y1="16" y2="256"/></g><g class="hit col" data-tip="TPOT: 13.1 ms/token"><rect class="hitbox" x="106.7" y="16" width="69.8" height="240"/><line class="hair" x1="136.4" x2="136.4" y1="16" y2="256"/></g><g class="hit col" data-tip="TPOT: 13.4 ms/token"><rect class="hitbox" x="176.4" y="16" width="120.2" height="240"/><line class="hair" x1="216.5" x2="216.5" y1="16" y2="256"/></g><g class="hit col" data-tip="TPOT: 14.1 ms/token"><rect class="hitbox" x="296.6" y="16" width="164.1" height="240"/><line class="hair" x1="376.8" x2="376.8" y1="16" y2="256"/></g><g class="hit col" data-tip="TPOT: 14.8 ms/token"><rect class="hitbox" x="460.7" y="16" width="147.3" height="240"/><line class="hair" x1="544.6" x2="544.6" y1="16" y2="256"/></g><g class="hit col" data-tip="TPOT: 15.4 ms/token"><rect class="hitbox" x="608.0" y="16" width="88.0" height="240"/><line class="hair" x1="671.5" x2="671.5" y1="16" y2="256"/></g></svg>

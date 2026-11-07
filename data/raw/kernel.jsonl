@@ -1,0 +1,30 @@
+{"test": "prefill", "chars": 15000, "rep": 0, "ttft_ms": 2079.9, "e2e_ms": 2091.3, "tpot_ms": 10.62, "prompt": 8282, "out": 2, "label": "base"}
+{"test": "prefill", "chars": 15000, "rep": 1, "ttft_ms": 2070.2, "e2e_ms": 2081.6, "tpot_ms": 10.66, "prompt": 8284, "out": 2, "label": "base"}
+{"test": "prefill", "chars": 15000, "rep": 2, "ttft_ms": 2070.0, "e2e_ms": 2081.2, "tpot_ms": 10.35, "prompt": 8285, "out": 2, "label": "base"}
+{"test": "prefill", "chars": 55000, "rep": 0, "ttft_ms": 8486.4, "e2e_ms": 8492.3, "tpot_ms": 5.08, "prompt": 30954, "out": 2, "label": "base"}
+{"test": "prefill", "chars": 55000, "rep": 1, "ttft_ms": 8508.8, "e2e_ms": 8514.1, "tpot_ms": 4.51, "prompt": 30956, "out": 2, "label": "base"}
+{"test": "prefill", "chars": 55000, "rep": 2, "ttft_ms": 8516.6, "e2e_ms": 8521.6, "tpot_ms": 4.12, "prompt": 30957, "out": 2, "label": "base"}
+{"test": "decode", "rep": 0, "ttft_ms": 546.7, "e2e_ms": 7196.0, "tpot_ms": 13.01, "prompt": 2176, "out": 512, "label": "base"}
+{"test": "decode", "rep": 1, "ttft_ms": 548.2, "e2e_ms": 7201.3, "tpot_ms": 13.01, "prompt": 2174, "out": 512, "label": "base"}
+{"test": "decode", "rep": 2, "ttft_ms": 550.9, "e2e_ms": 7206.1, "tpot_ms": 13.02, "prompt": 2174, "out": 512, "label": "base"}
+{"test": "c2", "wall_ms": 8452, "tok_s": 121.2, "tpot_ms": 14.64, "label": "base"}
+{"test": "prefill", "chars": 15000, "rep": 0, "ttft_ms": 2075.3, "e2e_ms": 2086.4, "tpot_ms": 10.57, "prompt": 8283, "out": 2, "label": "fi-sampler"}
+{"test": "prefill", "chars": 15000, "rep": 1, "ttft_ms": 2071.9, "e2e_ms": 2083.1, "tpot_ms": 10.56, "prompt": 8282, "out": 2, "label": "fi-sampler"}
+{"test": "prefill", "chars": 15000, "rep": 2, "ttft_ms": 2068.5, "e2e_ms": 2081.0, "tpot_ms": 11.85, "prompt": 8283, "out": 2, "label": "fi-sampler"}
+{"test": "prefill", "chars": 55000, "rep": 0, "ttft_ms": 8484.2, "e2e_ms": 8489.5, "tpot_ms": 4.69, "prompt": 30954, "out": 2, "label": "fi-sampler"}
+{"test": "prefill", "chars": 55000, "rep": 1, "ttft_ms": 8509.1, "e2e_ms": 8515.1, "tpot_ms": 5.32, "prompt": 30958, "out": 2, "label": "fi-sampler"}
+{"test": "prefill", "chars": 55000, "rep": 2, "ttft_ms": 8515.1, "e2e_ms": 8521.1, "tpot_ms": 5.12, "prompt": 30956, "out": 2, "label": "fi-sampler"}
+{"test": "decode", "rep": 0, "ttft_ms": 547.1, "e2e_ms": 7166.8, "tpot_ms": 12.95, "prompt": 2176, "out": 512, "label": "fi-sampler"}
+{"test": "decode", "rep": 1, "ttft_ms": 557.0, "e2e_ms": 7173.7, "tpot_ms": 12.94, "prompt": 2179, "out": 512, "label": "fi-sampler"}
+{"test": "decode", "rep": 2, "ttft_ms": 551.6, "e2e_ms": 7169.4, "tpot_ms": 12.92, "prompt": 2174, "out": 512, "label": "fi-sampler"}
+{"test": "c2", "wall_ms": 8542, "tok_s": 119.9, "tpot_ms": 14.59, "label": "fi-sampler"}
+{"test": "prefill", "chars": 15000, "rep": 0, "ttft_ms": 2082.3, "e2e_ms": 2093.2, "tpot_ms": 10.11, "prompt": 8281, "out": 2, "label": "fi-attn"}
+{"test": "prefill", "chars": 15000, "rep": 1, "ttft_ms": 2071.0, "e2e_ms": 2081.4, "tpot_ms": 9.58, "prompt": 8281, "out": 2, "label": "fi-attn"}
+{"test": "prefill", "chars": 15000, "rep": 2, "ttft_ms": 2068.4, "e2e_ms": 2078.7, "tpot_ms": 9.61, "prompt": 8280, "out": 2, "label": "fi-attn"}
+{"test": "prefill", "chars": 55000, "rep": 0, "ttft_ms": 8460.9, "e2e_ms": 8465.5, "tpot_ms": 3.81, "prompt": 30954, "out": 2, "label": "fi-attn"}
+{"test": "prefill", "chars": 55000, "rep": 1, "ttft_ms": 8480.9, "e2e_ms": 8486.3, "tpot_ms": 4.55, "prompt": 30955, "out": 2, "label": "fi-attn"}
+{"test": "prefill", "chars": 55000, "rep": 2, "ttft_ms": 8500.1, "e2e_ms": 8505.1, "tpot_ms": 4.09, "prompt": 30956, "out": 2, "label": "fi-attn"}
+{"test": "decode", "rep": 0, "ttft_ms": 551.8, "e2e_ms": 7199.6, "tpot_ms": 13.0, "prompt": 2177, "out": 512, "label": "fi-attn"}
+{"test": "decode", "rep": 1, "ttft_ms": 549.3, "e2e_ms": 7195.8, "tpot_ms": 13.0, "prompt": 2175, "out": 512, "label": "fi-attn"}
+{"test": "decode", "rep": 2, "ttft_ms": 549.5, "e2e_ms": 7193.9, "tpot_ms": 13.0, "prompt": 2175, "out": 512, "label": "fi-attn"}
+{"test": "c2", "wall_ms": 8534, "tok_s": 120.0, "tpot_ms": 14.59, "label": "fi-attn"}

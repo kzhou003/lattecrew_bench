@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="154" class="chart" viewBox="0 0 720 154" role="img" aria-label="Model swap cost" preserveAspectRatio="xMidYMid meet"><style>svg{
+  /* Layout: one reading column of about 68ch; figures may widen to 920px. Lab-notebook calm, coffee-tinted neutrals. */
+  --bg:#f7f6f3; --panel:#ffffff; --fg:#1d1c1a; --muted:#5d5b55; --faint:#8b8880; --rule:#e2dfd8; --grid:#ebe8e2;
+  --accent:#7a4a2a; --code-bg:#efece6;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --mute-fill:#c9c6bf;
+  --n0:#f1efea; --n1:#e9f1fb; --n2:#eef7f2; --n3:#fbf0e9; --n4:#f5f1e3;
+  --display:"Noto Serif SC","Songti SC",serif; --body:"Noto Sans SC","PingFang SC","Hiragino Sans GB",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+ font-family:'Noto Sans SC','PingFang SC',sans-serif; background:var(--panel)}
+svg.chart{display:block;width:100%;height:auto;min-width:560px}
+svg .s1{fill:var(--s1)} svg .s2{fill:var(--s2)} svg .s3{fill:var(--s3)} svg .s4{fill:var(--s4)} svg .muted{fill:var(--mute-fill)}
+svg .seg-ok{fill:var(--s1)} svg .seg-bad{fill:var(--s2)} svg .seg-miss{fill:var(--mute-fill)}
+svg .line{fill:none;stroke-width:2} svg .line.s1{stroke:var(--s1)} svg .line.s2{stroke:var(--s2)} svg .line.s4{stroke:var(--s4)}
+svg .dot{stroke:var(--panel);stroke-width:2}
+svg .grid{stroke:var(--grid);stroke-width:1} svg .axis{stroke:var(--faint);stroke-width:1} svg .rowrule{stroke:var(--grid);stroke-dasharray:2 4}
+svg text{fill:var(--muted);font-family:var(--body);font-size:12.5px}
+svg .tick{font-family:var(--mono);font-size:11px;fill:var(--faint)}
+svg .val{font-family:var(--mono);font-size:12px;fill:var(--fg)}
+svg .lab{fill:var(--fg);font-size:13px} svg .axlab{font-size:12px;fill:var(--muted)}
+svg .hitbox{fill:transparent} svg .hair{stroke:var(--faint);stroke-width:1;opacity:0}
+svg .col:hover .hair,svg .col:focus .hair{opacity:1}
+svg .hit:hover path,svg .hit:hover > rect:not(.hitbox){opacity:.85}
+svg .node{fill:var(--n0);stroke:var(--rule)} svg .node.n1{fill:var(--n1)} svg .node.n2{fill:var(--n2)} svg .node.n3{fill:var(--n3)} svg .node.n4{fill:var(--n4)}
+svg .nodet{fill:var(--fg);font-weight:600;font-size:14px} svg .nodes{fill:var(--muted);font-size:12px}
+svg .meas{fill:var(--fg);font-family:var(--mono);font-size:12.5px}
+svg .flow{stroke:var(--faint);stroke-width:1.5} svg .arrowhead{fill:var(--faint)}
+svg .life{stroke:var(--rule);stroke-dasharray:3 4}
+svg .msg{fill:none;stroke-width:1.8} svg .msg.m1{stroke:var(--s1)} svg .msg.m2{stroke:var(--s2)} svg .msg.m3{stroke:var(--s3)}
+svg .msgt{fill:var(--fg);font-size:12.5px;font-weight:600} svg .msgs{fill:var(--muted);font-size:11.5px}
+svg .hair{display:none}</style><line class="grid" x1="210.0" x2="210.0" y1="18" y2="146"/><text class="tick" x="210.0" y="12" text-anchor="middle">0</text><line class="grid" x1="328.5" x2="328.5" y1="18" y2="146"/><text class="tick" x="328.5" y="12" text-anchor="middle">20</text><line class="grid" x1="447.0" x2="447.0" y1="18" y2="146"/><text class="tick" x="447.0" y="12" text-anchor="middle">40</text><line class="grid" x1="565.5" x2="565.5" y1="18" y2="146"/><text class="tick" x="565.5" y="12" text-anchor="middle">60</text><g class="hit" data-tip="首个请求触发加载，约 64 秒（先前测量）"><rect class="hitbox" x="0" y="23" width="720" height="30"/><text class="lab" x="200" y="41.0" text-anchor="end" dominant-baseline="middle">Qwen3.8 27B（vLLM）</text><path class="s2" d="M210,30 h375.2 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-375.2 z"/><text class="val" x="595.2" y="41.0" dominant-baseline="middle">64 秒</text></g><g class="hit" data-tip="首个请求 67.6 秒，减去合成时间"><rect class="hitbox" x="0" y="53" width="720" height="30"/><text class="lab" x="200" y="71.0" text-anchor="end" dominant-baseline="middle">Qwen3-TTS</text><path class="s2" d="M210,60 h388.9 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-388.9 z"/><text class="val" x="608.9" y="71.0" dominant-baseline="middle">66 秒</text></g><g class="hit" data-tip="首个视频 91 秒，同参数第二次 40 秒"><rect class="hitbox" x="0" y="83" width="720" height="30"/><text class="lab" x="200" y="101.0" text-anchor="end" dominant-baseline="middle">Wan2.2 TI2V 5B</text><path class="s2" d="M210,90 h297.6 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-297.6 z"/><text class="val" x="517.6" y="101.0" dominant-baseline="middle">51 秒</text></g><g class="hit" data-tip="首张 38.1 秒，之后 2.5 秒"><rect class="hitbox" x="0" y="113" width="720" height="30"/><text class="lab" x="200" y="131.0" text-anchor="end" dominant-baseline="middle">Z-Image-Turbo</text><path class="s2" d="M210,120 h207.1 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-207.1 z"/><text class="val" x="427.1" y="131.0" dominant-baseline="middle">36 秒</text></g><line class="axis" x1="210" x2="210" y1="18" y2="146"/></svg>

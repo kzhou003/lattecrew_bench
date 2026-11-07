@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="170" class="chart" viewBox="0 0 720 170" role="img" aria-label="Agent fixed overhead" preserveAspectRatio="xMidYMid meet"><style>svg{
+  /* Layout: one reading column of about 68ch; figures may widen to 920px. Lab-notebook calm, coffee-tinted neutrals. */
+  --bg:#f7f6f3; --panel:#ffffff; --fg:#1d1c1a; --muted:#5d5b55; --faint:#8b8880; --rule:#e2dfd8; --grid:#ebe8e2;
+  --accent:#7a4a2a; --code-bg:#efece6;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --mute-fill:#c9c6bf;
+  --n0:#f1efea; --n1:#e9f1fb; --n2:#eef7f2; --n3:#fbf0e9; --n4:#f5f1e3;
+  --display:"Noto Serif SC","Songti SC",serif; --body:"Noto Sans SC","PingFang SC","Hiragino Sans GB",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+ font-family:'Noto Sans SC','PingFang SC',sans-serif; background:var(--panel)}
+svg.chart{display:block;width:100%;height:auto;min-width:560px}
+svg .s1{fill:var(--s1)} svg .s2{fill:var(--s2)} svg .s3{fill:var(--s3)} svg .s4{fill:var(--s4)} svg .muted{fill:var(--mute-fill)}
+svg .seg-ok{fill:var(--s1)} svg .seg-bad{fill:var(--s2)} svg .seg-miss{fill:var(--mute-fill)}
+svg .line{fill:none;stroke-width:2} svg .line.s1{stroke:var(--s1)} svg .line.s2{stroke:var(--s2)} svg .line.s4{stroke:var(--s4)}
+svg .dot{stroke:var(--panel);stroke-width:2}
+svg .grid{stroke:var(--grid);stroke-width:1} svg .axis{stroke:var(--faint);stroke-width:1} svg .rowrule{stroke:var(--grid);stroke-dasharray:2 4}
+svg text{fill:var(--muted);font-family:var(--body);font-size:12.5px}
+svg .tick{font-family:var(--mono);font-size:11px;fill:var(--faint)}
+svg .val{font-family:var(--mono);font-size:12px;fill:var(--fg)}
+svg .lab{fill:var(--fg);font-size:13px} svg .axlab{font-size:12px;fill:var(--muted)}
+svg .hitbox{fill:transparent} svg .hair{stroke:var(--faint);stroke-width:1;opacity:0}
+svg .col:hover .hair,svg .col:focus .hair{opacity:1}
+svg .hit:hover path,svg .hit:hover > rect:not(.hitbox){opacity:.85}
+svg .node{fill:var(--n0);stroke:var(--rule)} svg .node.n1{fill:var(--n1)} svg .node.n2{fill:var(--n2)} svg .node.n3{fill:var(--n3)} svg .node.n4{fill:var(--n4)}
+svg .nodet{fill:var(--fg);font-weight:600;font-size:14px} svg .nodes{fill:var(--muted);font-size:12px}
+svg .meas{fill:var(--fg);font-family:var(--mono);font-size:12.5px}
+svg .flow{stroke:var(--faint);stroke-width:1.5} svg .arrowhead{fill:var(--faint)}
+svg .life{stroke:var(--rule);stroke-dasharray:3 4}
+svg .msg{fill:none;stroke-width:1.8} svg .msg.m1{stroke:var(--s1)} svg .msg.m2{stroke:var(--s2)} svg .msg.m3{stroke:var(--s3)}
+svg .msgt{fill:var(--fg);font-size:12.5px;font-weight:600} svg .msgs{fill:var(--muted);font-size:11.5px}
+svg .hair{display:none}</style><line class="grid" x1="210.0" x2="210.0" y1="18" y2="162"/><text class="tick" x="210.0" y="12" text-anchor="middle">0</text><line class="grid" x1="306.5" x2="306.5" y1="18" y2="162"/><text class="tick" x="306.5" y="12" text-anchor="middle">5</text><line class="grid" x1="402.9" x2="402.9" y1="18" y2="162"/><text class="tick" x="402.9" y="12" text-anchor="middle">10</text><line class="grid" x1="499.4" x2="499.4" y1="18" y2="162"/><text class="tick" x="499.4" y="12" text-anchor="middle">15</text><line class="grid" x1="595.8" x2="595.8" y1="18" y2="162"/><text class="tick" x="595.8" y="12" text-anchor="middle">20</text><text class="lab" x="200" y="43.0" text-anchor="end" dominant-baseline="middle">OpenCode 空任务</text><rect class="muted hit" data-tip="OpenCode 空任务 · 其余：启动、工具加载、解码、往返: 2.1 秒" x="211.0" y="31" width="37.6" height="22" rx="3"/><text class="val" x="255.6" y="43.0" dominant-baseline="middle">2.1 秒</text><text class="lab" x="200" y="77.0" text-anchor="end" dominant-baseline="middle">Claude Code 空任务</text><rect class="s2 hit" data-tip="Claude Code 空任务 · 模型时间（API 或 vLLM 预填充）: 0.6 秒" x="211.0" y="65" width="10.5" height="22" rx="3"/><rect class="muted hit" data-tip="Claude Code 空任务 · 其余：启动、工具加载、解码、往返: 3.0 秒" x="223.5" y="65" width="55.3" height="22" rx="3"/><text class="val" x="285.8" y="77.0" dominant-baseline="middle">3.6 秒</text><text class="lab" x="200" y="111.0" text-anchor="end" dominant-baseline="middle">Kiro qwen 网关（修复前）</text><rect class="s2 hit" data-tip="Kiro qwen 网关（修复前） · 模型时间（API 或 vLLM 预填充）: 13.7 秒" x="211.0" y="99" width="263.0" height="22" rx="3"/><rect class="muted hit" data-tip="Kiro qwen 网关（修复前） · 其余：启动、工具加载、解码、往返: 7 秒" x="476.0" y="99" width="133.0" height="22" rx="3"/><text class="val" x="616.0" y="111.0" dominant-baseline="middle">20.7 秒</text><text class="lab" x="200" y="145.0" text-anchor="end" dominant-baseline="middle">Kiro qwen 网关（修复后）</text><rect class="s2 hit" data-tip="Kiro qwen 网关（修复后） · 模型时间（API 或 vLLM 预填充）: 3.3 秒" x="211.0" y="133" width="62.1" height="22" rx="3"/><rect class="muted hit" data-tip="Kiro qwen 网关（修复后） · 其余：启动、工具加载、解码、往返: 7.5 秒" x="275.1" y="133" width="142.8" height="22" rx="3"/><text class="val" x="424.9" y="145.0" dominant-baseline="middle">10.8 秒</text><line class="axis" x1="210" x2="210" y1="18" y2="162"/></svg>

@@ -1,0 +1,39 @@
+{"kind": "zimage", "steps": 4, "rep": 0, "secs": 38.09, "start": 1794039558.6429522, "size": "1024x1024"}
+{"kind": "zimage", "steps": 4, "rep": 1, "secs": 2.46, "start": 1794039596.7368848, "size": "1024x1024"}
+{"kind": "zimage", "steps": 4, "rep": 2, "secs": 2.45, "start": 1794039599.2000449, "size": "1024x1024"}
+{"kind": "zimage", "steps": 4, "rep": 3, "secs": 2.47, "start": 1794039601.6550715, "size": "1024x1024"}
+{"kind": "zimage", "steps": 8, "rep": 0, "secs": 4.64, "start": 1794039604.1291568, "size": "1024x1024"}
+{"kind": "zimage", "steps": 8, "rep": 1, "secs": 4.67, "start": 1794039608.7683613, "size": "1024x1024"}
+{"kind": "zimage", "steps": 8, "rep": 2, "secs": 4.64, "start": 1794039613.437308, "size": "1024x1024"}
+{"kind": "zimage", "steps": 8, "rep": 3, "secs": 4.66, "start": 1794039618.0811079, "size": "1024x1024"}
+{"kind": "zimage", "steps": 12, "rep": 0, "secs": 6.86, "start": 1794039622.738344, "size": "1024x1024"}
+{"kind": "zimage", "steps": 12, "rep": 1, "secs": 6.88, "start": 1794039629.6016543, "size": "1024x1024"}
+{"kind": "zimage", "steps": 12, "rep": 2, "secs": 6.88, "start": 1794039636.4861288, "size": "1024x1024"}
+{"kind": "zimage", "steps": 12, "rep": 3, "secs": 6.86, "start": 1794039643.369713, "size": "1024x1024"}
+{"kind": "zimage", "steps": 8, "rep": 0, "secs": 1.18, "start": 1794039650.225978, "size": "512x512"}
+{"kind": "zimage", "steps": 8, "rep": 1, "secs": 1.13, "start": 1794039651.410363, "size": "512x512"}
+{"kind": "zimage", "steps": 8, "rep": 2, "secs": 1.13, "start": 1794039652.542453, "size": "512x512"}
+{"kind": "zimage", "steps": 8, "rep": 0, "secs": 2.52, "start": 1794039653.6753788, "size": "768x768"}
+{"kind": "zimage", "steps": 8, "rep": 1, "secs": 2.49, "start": 1794039656.1955163, "size": "768x768"}
+{"kind": "zimage", "steps": 8, "rep": 2, "secs": 2.49, "start": 1794039658.681358, "size": "768x768"}
+{"kind": "zimage", "steps": 8, "rep": 0, "secs": 4.61, "start": 1794039661.1744325, "size": "1344x768"}
+{"kind": "zimage", "steps": 8, "rep": 1, "secs": 4.58, "start": 1794039665.7797427, "size": "1344x768"}
+{"kind": "zimage", "steps": 8, "rep": 2, "secs": 4.58, "start": 1794039670.3617327, "size": "1344x768"}
+{"kind": "tts", "text": "short", "chars": 12, "rep": 0, "secs": 67.55, "audio": 2.32, "rtf": 29.117, "start": 1794039674.9460692}
+{"kind": "tts", "text": "short", "chars": 12, "rep": 1, "secs": 1.1, "audio": 2.32, "rtf": 0.475, "start": 1794039742.499668}
+{"kind": "tts", "text": "short", "chars": 12, "rep": 2, "secs": 1.82, "audio": 4.0, "rtf": 0.455, "start": 1794039743.6030703}
+{"kind": "tts", "text": "short", "chars": 12, "rep": 3, "secs": 1.24, "audio": 2.72, "rtf": 0.456, "start": 1794039745.4229817}
+{"kind": "tts", "text": "mid", "chars": 51, "rep": 0, "secs": 4.77, "audio": 10.8, "rtf": 0.441, "start": 1794039746.6643155}
+{"kind": "tts", "text": "mid", "chars": 51, "rep": 1, "secs": 4.94, "audio": 11.44, "rtf": 0.432, "start": 1794039751.4302096}
+{"kind": "tts", "text": "mid", "chars": 51, "rep": 2, "secs": 4.83, "audio": 11.28, "rtf": 0.428, "start": 1794039756.3707821}
+{"kind": "tts", "text": "mid", "chars": 51, "rep": 3, "secs": 5.24, "audio": 12.24, "rtf": 0.428, "start": 1794039761.1991806}
+{"kind": "tts", "text": "long", "chars": 115, "rep": 0, "secs": 15.75, "audio": 28.88, "rtf": 0.545, "start": 1794039766.435377}
+{"kind": "tts", "text": "long", "chars": 115, "rep": 1, "secs": 17.15, "audio": 26.32, "rtf": 0.652, "start": 1794039782.1886075}
+{"kind": "tts", "text": "long", "chars": 115, "rep": 2, "secs": 14.86, "audio": 25.68, "rtf": 0.579, "start": 1794039799.340586}
+{"kind": "tts", "text": "long", "chars": 115, "rep": 3, "secs": 12.93, "audio": 25.36, "rtf": 0.51, "start": 1794039814.2021115}
+{"kind": "wan", "frames": 25, "steps": 30, "rep": 0, "size": "1280x704", "secs": 90.9, "bytes": 641543, "start": 1794039827.1310298, "end": 1794039918.0034454}
+{"kind": "wan", "frames": 25, "steps": 30, "rep": 0, "size": "1280x704", "secs": 40.0, "bytes": 641543, "start": 1794039918.0039084, "end": 1794039957.9782834}
+{"kind": "wan", "frames": 49, "steps": 30, "rep": 0, "size": "1280x704", "secs": 80.0, "bytes": 817818, "start": 1794039957.9784837, "end": 1794040038.0057175}
+{"kind": "wan", "frames": 121, "steps": 30, "rep": 0, "size": "1280x704", "secs": 326.2, "bytes": 2089012, "start": 1794040038.0059454, "end": 1794040364.2100866}
+{"kind": "wan", "frames": 49, "steps": 15, "rep": 0, "size": "1280x704", "secs": 78.3, "bytes": 650358, "start": 1794040364.2102754, "end": 1794040442.4810367}
+{"kind": "wan", "frames": 49, "steps": 50, "rep": 0, "size": "1280x704", "secs": 100.8, "bytes": 1091924, "start": 1794040442.4813037, "end": 1794040543.2724485}

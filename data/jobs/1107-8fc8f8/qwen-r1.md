@@ -1,0 +1,3 @@
+Done. Fixed `ledgerkit/money.py:1` per the plan: materializes weights, validates (empty / negative / all-zero → `ValueError`), allocates via `divmod(amount * w, weight_sum)` on the absolute total, hands leftover cents to largest fractional remainders with lower-index tie-break, and negates for negative totals. Added 10 tests in `tests/test_money.py` covering the plan's cases.
+
+Verification command: `python3 -m pytest -q` → `11 passed in 0.01s` (pytest was actually available in this environment, contrary to the note). Committed as `963868b` on `crew/1107-8fc8f8`; no push.

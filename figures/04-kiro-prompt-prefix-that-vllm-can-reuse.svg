@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="154" class="chart" viewBox="0 0 760 154" role="img" aria-label="Kiro prompt prefix that vLLM can reuse" preserveAspectRatio="xMidYMid meet"><style>svg{
+  /* Layout: one reading column of about 68ch; figures may widen to 920px. Lab-notebook calm, coffee-tinted neutrals. */
+  --bg:#f7f6f3; --panel:#ffffff; --fg:#1d1c1a; --muted:#5d5b55; --faint:#8b8880; --rule:#e2dfd8; --grid:#ebe8e2;
+  --accent:#7a4a2a; --code-bg:#efece6;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --mute-fill:#c9c6bf;
+  --n0:#f1efea; --n1:#e9f1fb; --n2:#eef7f2; --n3:#fbf0e9; --n4:#f5f1e3;
+  --display:"Noto Serif SC","Songti SC",serif; --body:"Noto Sans SC","PingFang SC","Hiragino Sans GB",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+ font-family:'Noto Sans SC','PingFang SC',sans-serif; background:var(--panel)}
+svg.chart{display:block;width:100%;height:auto;min-width:560px}
+svg .s1{fill:var(--s1)} svg .s2{fill:var(--s2)} svg .s3{fill:var(--s3)} svg .s4{fill:var(--s4)} svg .muted{fill:var(--mute-fill)}
+svg .seg-ok{fill:var(--s1)} svg .seg-bad{fill:var(--s2)} svg .seg-miss{fill:var(--mute-fill)}
+svg .line{fill:none;stroke-width:2} svg .line.s1{stroke:var(--s1)} svg .line.s2{stroke:var(--s2)} svg .line.s4{stroke:var(--s4)}
+svg .dot{stroke:var(--panel);stroke-width:2}
+svg .grid{stroke:var(--grid);stroke-width:1} svg .axis{stroke:var(--faint);stroke-width:1} svg .rowrule{stroke:var(--grid);stroke-dasharray:2 4}
+svg text{fill:var(--muted);font-family:var(--body);font-size:12.5px}
+svg .tick{font-family:var(--mono);font-size:11px;fill:var(--faint)}
+svg .val{font-family:var(--mono);font-size:12px;fill:var(--fg)}
+svg .lab{fill:var(--fg);font-size:13px} svg .axlab{font-size:12px;fill:var(--muted)}
+svg .hitbox{fill:transparent} svg .hair{stroke:var(--faint);stroke-width:1;opacity:0}
+svg .col:hover .hair,svg .col:focus .hair{opacity:1}
+svg .hit:hover path,svg .hit:hover > rect:not(.hitbox){opacity:.85}
+svg .node{fill:var(--n0);stroke:var(--rule)} svg .node.n1{fill:var(--n1)} svg .node.n2{fill:var(--n2)} svg .node.n3{fill:var(--n3)} svg .node.n4{fill:var(--n4)}
+svg .nodet{fill:var(--fg);font-weight:600;font-size:14px} svg .nodes{fill:var(--muted);font-size:12px}
+svg .meas{fill:var(--fg);font-family:var(--mono);font-size:12.5px}
+svg .flow{stroke:var(--faint);stroke-width:1.5} svg .arrowhead{fill:var(--faint)}
+svg .life{stroke:var(--rule);stroke-dasharray:3 4}
+svg .msg{fill:none;stroke-width:1.8} svg .msg.m1{stroke:var(--s1)} svg .msg.m2{stroke:var(--s2)} svg .msg.m3{stroke:var(--s3)}
+svg .msgt{fill:var(--fg);font-size:12.5px;font-weight:600} svg .msgs{fill:var(--muted);font-size:11.5px}
+svg .hair{display:none}</style><text class="lab" x="108" y="42" text-anchor="end" dominant-baseline="middle">改动前</text><rect class="seg-ok hit" data-tip="开头 184 个 token：可复用" x="121.0" y="26" width="3.0" height="32" rx="4"/><rect class="seg-bad hit" data-tip="bash 工具描述：含本会话的临时目录，每轮不同" x="123.4" y="26" width="15.1" height="32" rx="4"/><rect class="seg-miss hit" data-tip="其后全部无法复用：106 个工具定义 + 系统提示 + 用户消息" x="140.6" y="26" width="598.4" height="32" rx="4"/><text class="lab" x="108" y="106" text-anchor="end" dominant-baseline="middle">工具重排后</text><rect class="seg-ok hit" data-tip="可复用前缀 36,848 个 token（47 个 784-token 块）" x="121.0" y="90" width="483.8" height="32" rx="4"/><rect class="seg-miss hit" data-tip="每轮重算：易变的 bash 工具、系统提示尾部、用户消息" x="606.8" y="90" width="132.2" height="32" rx="4"/><text class="tick" x="120.0" y="16" text-anchor="middle">0</text><text class="tick" x="251.8" y="16" text-anchor="middle">10,000</text><text class="tick" x="383.7" y="16" text-anchor="middle">20,000</text><text class="tick" x="515.5" y="16" text-anchor="middle">30,000</text><text class="tick" x="647.4" y="16" text-anchor="middle">40,000</text><text class="tick" x="740.0" y="16" text-anchor="middle">47,024</text></svg>

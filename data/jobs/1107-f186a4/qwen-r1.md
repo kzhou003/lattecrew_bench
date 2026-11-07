@@ -1,0 +1,1 @@
+Done. `python3 -m pytest -q` → `23 passed in 0.04s`. Committed as `ea6370d Add streaming RFC 4180 CSV parser (CsvStream)` on branch `crew/1107-f186a4` (2 files, 307 insertions), no push.

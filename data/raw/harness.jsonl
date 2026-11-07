@@ -1,0 +1,8 @@
+{"probe": "claude", "wall_ms": 4219.51074100798, "api_ms": 677.0, "cost": 0.0045533399999999995, "input": 2, "cache_write": 22302, "cache_read": 9074, "output": 4}
+{"probe": "claude", "wall_ms": 3639.7074710112065, "api_ms": 648.0, "cost": 0.00031596, "input": 2, "cache_write": 0, "cache_read": 31376, "output": 4}
+{"probe": "claude", "wall_ms": 3419.182497978909, "api_ms": 651.0, "cost": 0.00032846, "input": 2, "cache_write": 0, "cache_read": 31376, "output": 29}
+{"probe": "claude", "wall_ms": 3619.867603003513, "api_ms": 641.0, "cost": 0.00032946, "input": 2, "cache_write": 0, "cache_read": 31376, "output": 31}
+{"probe": "opencode", "wall_ms": 5636.21791798505, "steps": 1, "tokens": {"total": 12260, "input": 12198, "output": 4, "reasoning": 58, "cache": {"write": 0, "read": 0}}}
+{"probe": "opencode", "wall_ms": 2078.1595229927916, "steps": 1, "tokens": {"total": 12218, "input": 12198, "output": 4, "reasoning": 16, "cache": {"write": 0, "read": 0}}}
+{"probe": "opencode", "wall_ms": 2050.6530679995194, "steps": 1, "tokens": {"total": 12217, "input": 12198, "output": 4, "reasoning": 15, "cache": {"write": 0, "read": 0}}}
+{"probe": "opencode", "wall_ms": 2024.8741329996847, "steps": 1, "tokens": {"total": 12215, "input": 12198, "output": 4, "reasoning": 13, "cache": {"write": 0, "read": 0}}}
