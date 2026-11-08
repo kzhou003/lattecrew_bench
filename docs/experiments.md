@@ -62,5 +62,12 @@ Dates are November 6–7, 2026. Each entry gives the goal, the exact way it was 
 - **Data**: `spec.jsonl`, `spec.log`.
 - **Result**: k = 3: 77 → 117 tok/s with reasoning (acceptance 52%), 155 tok/s without (≈ 90%); KV cache 139,810 → 78,372 tokens.
 
+## E12. Long context for Claude Code on Qwen
+- **Goal**: give `claude-qwen` enough room to work. At 65K a `read-codebase` session compacted 7 times in ~15 minutes and stopped with Claude Code's thrashing error.
+- **Run**: `probes/run_ctx.sh` with `probes/ctx_probe.py`: per config, two needle-in-a-haystack prompts of ~129K tokens (fact at 30% and 80%), and decode speed on a 1,200-token reasoning answer.
+- **Data**: `data/raw/ctx.jsonl`, `ctx.log`.
+- **Result**: bf16 KV at 128K does not start (8.33 GiB of KV needed, 7.05 GiB free). FP8 KV at 128K: 203,889 tokens of KV cache, needles 2/2, 78 tok/s. FP8 KV + MTP-3 at 128K: 147,287 tokens, needles 2/2, 118 tok/s, cold prefill of 129K tokens 56 s. Adopted as the default. First attempt failed because FP8 KV JIT-compiles kernels and needs `CUDA_HOME`.
+- **Follow-up**: `claude-qwen -p` (Claude Code on Qwen, 128K window, 8K output reserve) did task t4 alone in 84 s, 24 turns, 21 tests of its own; hidden tests 17/17, daylight-saving edge tests 0/2 (same as Claude Sonnet alone). Claude Code's startup context on Qwen is ~11K tokens; `--strict-mcp-config` did not reduce it (tools are already deferred).
+
 ## Not yet run (see the paper draft's agenda)
 MTP in the full collaboration loop; reasoning budgets; two concurrent coder jobs; quantized `lm_head`; vLLM sleep mode for swaps; streaming TTS; the Wan idle tail; a larger task set with replicates.

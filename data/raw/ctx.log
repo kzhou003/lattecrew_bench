@@ -1,0 +1,40 @@
+== fp8-128k 07:40:08
+(EngineCore pid=2595834) INFO 11-08 07:42:14 [gpu_worker.py:774] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.9000 is equivalent to --gpu-memory-utilization=0.8845 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.9155. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=2595834) INFO 11-08 07:42:14 [kv_cache_utils.py:2327] GPU KV cache size: 203,889 tokens, Maximum concurrency for 131,072 tokens per request: 1.56x
+{'test': 'needle', 'pos': 0.3, 'prompt': 129238, 'secs': 54.4, 'ok': True, 'answer': '8101-stream', 'secret': '8101-stream', 'label': 'fp8-128k'}
+{'test': 'needle', 'pos': 0.8, 'prompt': 129239, 'secs': 54.6, 'ok': True, 'answer': '3046-bucket', 'secret': '3046-bucket', 'label': 'fp8-128k'}
+{'test': 'decode', 'out': 1200, 'tok_s': 78.3, 'label': 'fp8-128k'}
+== fp8-128k-mtp3 07:44:51
+(EngineCore pid=2600172) INFO 11-08 07:46:46 [gpu_worker.py:774] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.9000 is equivalent to --gpu-memory-utilization=0.8810 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.9190. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=2600172) INFO 11-08 07:46:46 [kv_cache_utils.py:2327] GPU KV cache size: 147,287 tokens, Maximum concurrency for 131,072 tokens per request: 1.12x
+{'test': 'needle', 'pos': 0.3, 'prompt': 129238, 'secs': 56.7, 'ok': True, 'answer': '8101-stream', 'secret': '8101-stream', 'label': 'fp8-128k-mtp3'}
+{'test': 'needle', 'pos': 0.8, 'prompt': 129239, 'secs': 56.3, 'ok': True, 'answer': '3046-bucket', 'secret': '3046-bucket', 'label': 'fp8-128k-mtp3'}
+{'test': 'decode', 'out': 1200, 'tok_s': 117.9, 'label': 'fp8-128k-mtp3'}
+== bf16-96k 07:49:23
+(EngineCore pid=2604262) INFO 11-08 07:50:58 [gpu_worker.py:774] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.9000 is equivalent to --gpu-memory-utilization=0.8969 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.9031. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=2604262) INFO 11-08 07:50:58 [kv_cache_utils.py:2327] GPU KV cache size: 110,219 tokens, Maximum concurrency for 98,304 tokens per request: 1.12x
+Traceback (most recent call last):
+  File "/home/user/latte-bench/ctx_probe.py", line 23, in <module>
+    r, secs = chat(msg, 30)
+              ^^^^^^^^^^^^^
+  File "/home/user/latte-bench/ctx_probe.py", line 10, in chat
+    r = json.loads(u.urlopen(u.Request(B + "/v1/chat/completions", data=json.dumps(body).encode(), headers={"Content-Type": "application/json"}), timeout=900).read())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request

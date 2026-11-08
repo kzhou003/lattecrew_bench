@@ -1,0 +1,6 @@
+{"test": "needle", "pos": 0.3, "prompt": 129238, "secs": 54.4, "ok": true, "answer": "8101-stream", "secret": "8101-stream", "label": "fp8-128k"}
+{"test": "needle", "pos": 0.8, "prompt": 129239, "secs": 54.6, "ok": true, "answer": "3046-bucket", "secret": "3046-bucket", "label": "fp8-128k"}
+{"test": "decode", "out": 1200, "tok_s": 78.3, "label": "fp8-128k"}
+{"test": "needle", "pos": 0.3, "prompt": 129238, "secs": 56.7, "ok": true, "answer": "8101-stream", "secret": "8101-stream", "label": "fp8-128k-mtp3"}
+{"test": "needle", "pos": 0.8, "prompt": 129239, "secs": 56.3, "ok": true, "answer": "3046-bucket", "secret": "3046-bucket", "label": "fp8-128k-mtp3"}
+{"test": "decode", "out": 1200, "tok_s": 117.9, "label": "fp8-128k-mtp3"}
